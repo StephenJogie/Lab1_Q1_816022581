@@ -113,13 +113,13 @@ static void task_3(void *arg)
             printf("task 3 took mutex \n");
             //Print the output level of the pin if mutex is taken
             pin_state= gpio_get_level(GPIO_OUTPUT_IO_0);
-            printf("The output level of the PIN: %d", pin_state); 
-
+            printf("The output level of the PIN: %d \n", pin_state); 
+            
                 
             //Give back the mutex after critical task section complete
             xSemaphoreGive(xMutex);
             //Task delay for 1000ms
-            vTaskDelay(100 / portTICK_RATE_MS);
+            vTaskDelay(1000 / portTICK_RATE_MS);
         }
         else
         {
@@ -169,7 +169,7 @@ void app_main(void)
         //Will put nothing here as I just want my tasks to do their thing
         cnt++;
         //ESP_LOGI(TAG, "cnt: %d \n", cnt);
-        printf("COUNT = %d",cnt);
+        printf("COUNT = %d \n \n",cnt);
         vTaskDelay(1000 / portTICK_RATE_MS);
     }
 
