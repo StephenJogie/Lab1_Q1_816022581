@@ -1,10 +1,14 @@
-#Branch utilization for lab 2
+# Branch utilization for lab 2
+
 Lab 2 Q1 and P2 are included in this repository and branch. 
+
 Lab 2 Q2 and Q3 are included as branches in a separate repository https://github.com/StephenJogie/Lab2_Q2_816022581 
+
 The reason for branches only being utilized from the second question was because I was familiarizing myself with how to navigate between branches after Q1 was completed and the repository for Q2 was already made and being utilized, so it was decided that I would utilize branches going forward in the Q2 repository. 
+
 The branches for the Q2 repository will be explained in the readme in the repository for Q2.
 
-#P2
+# P2
 First, to allow freertos to collect statistics. 
   1. make menuconfig
   2. In menuconfig, -> component config -> FreeRTOS
