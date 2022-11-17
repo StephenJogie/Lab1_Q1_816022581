@@ -13,6 +13,17 @@ First, to allow freertos to collect statistics.
   1. make menuconfig
   2. In menuconfig, -> component config -> FreeRTOS
   3. Select the option to enable FreeRTOS to collect run time stats
+  
+
+Main resource used is vTaskGetRunTimeStats in task.h
+
+https://www.freertos.org/a00021.html#vTaskGetRunTimeStats for documentation
+
+From the above link it specifies that this disables interrupts
+
+This is also not intended for normal application usage, only for debugging.
+
+Therefore, a separate branch is used for debugging specifically with this function. (The branch used is q2_discuss in the Q2 repository) 
 
 # Lab2_Q1_816022581
 Included output files are:
